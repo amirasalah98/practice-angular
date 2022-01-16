@@ -3,7 +3,8 @@
   'show':login.av,'hide':!login.av}" (click)="change()" [id]="login.av">Login</a>
 <a [ngClass]="{
   'show':!login.av,'hide':login.av}" (click)="change()" [id]="!login.av">Logout</a>
-<a  class="show" >
+<a  [ngClass]="{
+  'show':!login.av,'hide':login.av}" >
   <fa-icon [icon]="faCoffee"></fa-icon>
 
 </a>
